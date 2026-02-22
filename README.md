@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+**UseState :**
+Definition:
+useState is used to create and manage state in functional components.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Use:
+  > Store form input
+  > Counter
+  > Toggle (show/hide)
+  > Any dynamic data
 
-## Available Scripts
+**2. useEffect**
+Definition:
+useEffect is used to perform side effects in components.
 
-In the project directory, you can run:
+Use:
+  > API call
+  > DOM update
+  > Event listeners
+  > Timer
+  > Component mount/unmount logic
 
-### `npm start`
+**3. useContext**
+Definition:
+Used to access global data without prop drilling.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Use:
+  > Authentication
+  > Theme
+  > User data
+  > Language settings
+ 
+**4. useRef**
+Definition:
+Used to access DOM elements or store mutable values without re-render.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Use:
+  > Focus input
+  > Store previous value
+  > Timer reference
+ 
 
-### `npm test`
+**5. useMemo**
+Definition:
+Used to memoize (cache) expensive calculations.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Use:
+  > Large list filtering
+  > Heavy computation
+  > Performance optimization
 
-### `npm run build`
+**6. useCallback**
+Definition:
+Used to memoize functions so they don’t recreate every render.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Use:
+  > Prevent child component re-render
+  > Performance optimization
+  > When passing function as prop
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**7. useReducer**
+Definition:
+Alternative to useState for complex state logic.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Use:
+  > Form with multiple fields
+  > Complex state updates
+  > State with many actions
 
-### `npm run eject`
+**8. useLayoutEffect**
+Definition:
+Same as useEffect but runs before browser paint.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Use:
+  > DOM measurements
+  > Layout changes
+  > Prevent flickering
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**9. useDeferredValue**
+Definition:
+Used to delay updating a value to improve performance.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Use:
+Search input optimization
+Large list rendering
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+**10. useTransition**
+Definition:
+Allows marking updates as non-urgent (low priority).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Use:
+  > Smooth UI updates
+  > Large UI rendering
+  > Search filtering
