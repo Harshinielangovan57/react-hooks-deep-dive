@@ -3,10 +3,10 @@ Definition:
 useState is used to create and manage state in functional components.
 
 Use:
-  > Store form input
-  > Counter
-  > Toggle (show/hide)
-  > Any dynamic data
+Store form input
+Counter
+Toggle (show/hide)
+Any dynamic data
 
 **2. useEffect**
 Definition:
